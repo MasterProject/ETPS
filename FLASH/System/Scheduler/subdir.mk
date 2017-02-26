@@ -2,37 +2,37 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
--include ../../../makefile.local
+-include ../../makefile.local
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS_QUOTED += \
-"../Modules/LowDrivers/TPM/TPM.c" \
+"../System/Scheduler/Sch.c" \
 
 C_SRCS += \
-../Modules/LowDrivers/TPM/TPM.c \
+../System/Scheduler/Sch.c \
 
 OBJS += \
-./Modules/LowDrivers/TPM/TPM.o \
+./System/Scheduler/Sch.o \
 
 C_DEPS += \
-./Modules/LowDrivers/TPM/TPM.d \
+./System/Scheduler/Sch.d \
 
 OBJS_QUOTED += \
-"./Modules/LowDrivers/TPM/TPM.o" \
+"./System/Scheduler/Sch.o" \
 
 C_DEPS_QUOTED += \
-"./Modules/LowDrivers/TPM/TPM.d" \
+"./System/Scheduler/Sch.d" \
 
 OBJS_OS_FORMAT += \
-./Modules/LowDrivers/TPM/TPM.o \
+./System/Scheduler/Sch.o \
 
 
 # Each subdirectory must supply rules for building sources it contributes
-Modules/LowDrivers/TPM/TPM.o: ../Modules/LowDrivers/TPM/TPM.c
+System/Scheduler/Sch.o: ../System/Scheduler/Sch.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #8 $<'
+	@echo 'Executing target #2 $<'
 	@echo 'Invoking: ARM Ltd Windows GCC C Compiler'
-	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"Modules/LowDrivers/TPM/TPM.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"Modules/LowDrivers/TPM/TPM.o"
+	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"System/Scheduler/Sch.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"System/Scheduler/Sch.o"
 	@echo 'Finished building: $<'
 	@echo ' '
 

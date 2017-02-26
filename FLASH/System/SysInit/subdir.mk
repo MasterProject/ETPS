@@ -2,37 +2,37 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
--include ../../../makefile.local
+-include ../../makefile.local
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS_QUOTED += \
-"../Modules/LowDrivers/TPM/TPM.c" \
+"../System/SysInit/SysInit.c" \
 
 C_SRCS += \
-../Modules/LowDrivers/TPM/TPM.c \
+../System/SysInit/SysInit.c \
 
 OBJS += \
-./Modules/LowDrivers/TPM/TPM.o \
+./System/SysInit/SysInit.o \
 
 C_DEPS += \
-./Modules/LowDrivers/TPM/TPM.d \
+./System/SysInit/SysInit.d \
 
 OBJS_QUOTED += \
-"./Modules/LowDrivers/TPM/TPM.o" \
+"./System/SysInit/SysInit.o" \
 
 C_DEPS_QUOTED += \
-"./Modules/LowDrivers/TPM/TPM.d" \
+"./System/SysInit/SysInit.d" \
 
 OBJS_OS_FORMAT += \
-./Modules/LowDrivers/TPM/TPM.o \
+./System/SysInit/SysInit.o \
 
 
 # Each subdirectory must supply rules for building sources it contributes
-Modules/LowDrivers/TPM/TPM.o: ../Modules/LowDrivers/TPM/TPM.c
+System/SysInit/SysInit.o: ../System/SysInit/SysInit.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #8 $<'
+	@echo 'Executing target #1 $<'
 	@echo 'Invoking: ARM Ltd Windows GCC C Compiler'
-	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"Modules/LowDrivers/TPM/TPM.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"Modules/LowDrivers/TPM/TPM.o"
+	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"System/SysInit/SysInit.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"System/SysInit/SysInit.o"
 	@echo 'Finished building: $<'
 	@echo ' '
 

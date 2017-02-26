@@ -59,11 +59,15 @@ OBJS_OS_FORMAT :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
+System/SysInit \
+System/Scheduler \
 Sources \
 Project_Settings/Startup_Code \
 Modules/LowDrivers/TPM \
+Modules/LowDrivers/PIT \
 Modules/LowDrivers/GPIO \
 Modules/LowDrivers/ADC \
 Modules/App/Test \
+Modules/App/HeartBit \
 Modules/App/ElectroTherapy \
 

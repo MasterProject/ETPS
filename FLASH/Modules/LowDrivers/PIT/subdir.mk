@@ -6,33 +6,33 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS_QUOTED += \
-"../Modules/LowDrivers/TPM/TPM.c" \
+"../Modules/LowDrivers/PIT/PIT.c" \
 
 C_SRCS += \
-../Modules/LowDrivers/TPM/TPM.c \
+../Modules/LowDrivers/PIT/PIT.c \
 
 OBJS += \
-./Modules/LowDrivers/TPM/TPM.o \
+./Modules/LowDrivers/PIT/PIT.o \
 
 C_DEPS += \
-./Modules/LowDrivers/TPM/TPM.d \
+./Modules/LowDrivers/PIT/PIT.d \
 
 OBJS_QUOTED += \
-"./Modules/LowDrivers/TPM/TPM.o" \
+"./Modules/LowDrivers/PIT/PIT.o" \
 
 C_DEPS_QUOTED += \
-"./Modules/LowDrivers/TPM/TPM.d" \
+"./Modules/LowDrivers/PIT/PIT.d" \
 
 OBJS_OS_FORMAT += \
-./Modules/LowDrivers/TPM/TPM.o \
+./Modules/LowDrivers/PIT/PIT.o \
 
 
 # Each subdirectory must supply rules for building sources it contributes
-Modules/LowDrivers/TPM/TPM.o: ../Modules/LowDrivers/TPM/TPM.c
+Modules/LowDrivers/PIT/PIT.o: ../Modules/LowDrivers/PIT/PIT.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #8 $<'
+	@echo 'Executing target #9 $<'
 	@echo 'Invoking: ARM Ltd Windows GCC C Compiler'
-	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"Modules/LowDrivers/TPM/TPM.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"Modules/LowDrivers/TPM/TPM.o"
+	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"Modules/LowDrivers/PIT/PIT.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"Modules/LowDrivers/PIT/PIT.o"
 	@echo 'Finished building: $<'
 	@echo ' '
 

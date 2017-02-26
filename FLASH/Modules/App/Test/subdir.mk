@@ -30,7 +30,7 @@ OBJS_OS_FORMAT += \
 # Each subdirectory must supply rules for building sources it contributes
 Modules/App/Test/Test.o: ../Modules/App/Test/Test.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #9 $<'
+	@echo 'Executing target #12 $<'
 	@echo 'Invoking: ARM Ltd Windows GCC C Compiler'
 	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"Modules/App/Test/Test.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"Modules/App/Test/Test.o"
 	@echo 'Finished building: $<'
