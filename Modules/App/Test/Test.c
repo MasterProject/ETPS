@@ -10,11 +10,11 @@
 #include "Test.h"
 #include "TPM.h"
 
-void TEST_vBlinkTestPWM ( void )
+
+/*Set X Freq in PIN_E20*/
+void TEST_vChangingFreq ( uint8 u8Freq )
 {
-	static uint16 u16LedFrecuency = 0;
-	
-	TPM_vSetPWM(enTPM1, enChannel0, u16LedFrecuency);
+	TPM_vChangeFrecuency(enTPM1, enChannel0, u8Freq);
 }
 
 

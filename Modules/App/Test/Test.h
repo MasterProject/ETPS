@@ -12,7 +12,11 @@
 
 #include "Typedef.h"
 
-extern void TEST_vBlinkTestPWM ( void );
+extern void TEST_vChangingFreq ( uint8 u8Freq );
 
+/*Change This Define to Activate Tests*/
+#define TEST		ON
+#define ON			1
+#define OFF			0
 
 #endif /* TEST_H_ */

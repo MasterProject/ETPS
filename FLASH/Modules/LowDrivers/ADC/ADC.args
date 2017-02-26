@@ -4,18 +4,18 @@
 -g3
 -gdwarf-2
 -gstrict-dwarf
--D"D:/CodeWarrior_Work/ProyectoTerapiaPresion/Modules/App/ElectroThreapy"
--U"D:/CodeWarrior_Work/ProyectoTerapiaPresion/Modules/App/ElectroThreapy"
--I"D:/CodeWarrior_Work/ProyectoTerapiaPresion/Project_Settings/Startup_Code"
--I"D:/CodeWarrior_Work/ProyectoTerapiaPresion/Modules/App/ElectroTherapy"
--I"D:/CodeWarrior_Work/ProyectoTerapiaPresion/Modules/App/Test"
--I"D:/CodeWarrior_Work/ProyectoTerapiaPresion/Modules/Tools"
--I"D:/CodeWarrior_Work/ProyectoTerapiaPresion/Project_Headers"
--I"D:/CodeWarrior_Work/ProyectoTerapiaPresion/Modules/LowDrivers/GPIO"
--I"D:/CodeWarrior_Work/ProyectoTerapiaPresion/Modules/LowDrivers/ADC"
--I"D:/CodeWarrior_Work/ProyectoTerapiaPresion/Modules/LowDrivers/TPM"
--I"D:/Freescale/CW MCU v10.7/MCU/ARM_GCC_Support/ewl/EWL_C/include"
--I"D:/Freescale/CW MCU v10.7/MCU/ARM_GCC_Support/ewl/EWL_Runtime/include"
+-D"C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/App/ElectroThreapy"
+-U"C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/App/ElectroThreapy"
+-I"C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Project_Settings/Startup_Code"
+-I"C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/App/ElectroTherapy"
+-I"C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/App/Test"
+-I"C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/Tools"
+-I"C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Project_Headers"
+-I"C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/LowDrivers/GPIO"
+-I"C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/LowDrivers/ADC"
+-I"C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/LowDrivers/TPM"
+-I"C:/Freescale/CW MCU v10.6/MCU/ARM_GCC_Support/ewl/EWL_C/include"
+-I"C:/Freescale/CW MCU v10.6/MCU/ARM_GCC_Support/ewl/EWL_Runtime/include"
 -O0
 -ffunction-sections
 -fdata-sections

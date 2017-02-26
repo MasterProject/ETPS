@@ -3,10 +3,6 @@
  *
  */
 
-
-
-
-
 #include "derivative.h" /* include peripheral declarations */
 #include "GPIO.h"
 #include "TPM.h"
@@ -15,13 +11,19 @@
 
 int main(void)
 {
+#if(TEST == ON)
+	static uint8 u8Freq = 0;
+#endif
+	
 	GPIO_vPinsInit();
 	TPM_vInit();
 	ADC_vInit();
 	
 	for(;;) 
 	{	  
-		TEST_vBlinkTestPWM();
+#if(TEST == ON)
+		TEST_vChangingFreq(u8Freq);
+#endif
 	}
 	
 	return 0;

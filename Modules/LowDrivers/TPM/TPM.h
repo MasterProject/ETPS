@@ -13,8 +13,11 @@
 #include "MKL25Z4.h"
 #include "Typedef.h"
 
-#define MOD_VALUE_TPM1			50000
-#define MOD_VALUE_TPM2			50000
+#define MOD_VALUE_TPM1			32000
+#define MOD_VALUE_TPM2			32000
+
+#define MOD_K_CONSTANT			328125
+#define MAX_FREQ_ALLOWED		101
 
 typedef enum
 {
@@ -31,5 +34,5 @@ typedef enum
 
 extern void TPM_vInit(void);
 extern void TPM_vSetPWM(TPM_tenModules enModule, TPM_tenChannels enChannel, uint16 u16Value);
-
+extern void TPM_vChangeFrecuency(TPM_tenModules enModule, TPM_tenChannels enChannel, uint8 u8Frecuency);
 #endif /* TPM_H_ */

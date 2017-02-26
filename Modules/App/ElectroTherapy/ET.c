@@ -7,11 +7,3 @@
  * 	filename: ET.c
  */
 
-
-
-void ET_Dumy ( void )
-{
-	unsigned char u8Test;
-	
-	u8Test++;
-}

@@ -21,8 +21,8 @@ void TPM_vInit(void)
 	TPM1_CnSC(1) |= (TPM_CnSC_MSB_MASK | TPM_CnSC_ELSB_MASK);
 	TPM2_CnSC(0) |= (TPM_CnSC_MSB_MASK | TPM_CnSC_ELSB_MASK);
 	/*Turn on Clocks*/
-	TPM1_SC |= TPM_SC_PS(4)|TPM_SC_TOF_MASK |TPM_SC_TOIE_MASK |TPM_SC_CMOD(1);/*ClockSource/2, TOF and TOIE enable*/
-	TPM2_SC |= TPM_SC_PS(4)|TPM_SC_TOF_MASK |TPM_SC_TOIE_MASK |TPM_SC_CMOD(1);/*ClockSource/2, TOF and TOIE enable*/
+	TPM1_SC |= TPM_SC_PS(6)|TPM_SC_TOF_MASK |TPM_SC_TOIE_MASK |TPM_SC_CMOD(1);/*ClockSource/2, TOF and TOIE enable*/
+	TPM2_SC |= TPM_SC_PS(6)|TPM_SC_TOF_MASK |TPM_SC_TOIE_MASK |TPM_SC_CMOD(1);/*ClockSource/2, TOF and TOIE enable*/
 }
 
 void TPM_vSetPWM(TPM_tenModules enModule, TPM_tenChannels enChannel, uint16 u16Value)
@@ -42,5 +42,37 @@ void TPM_vSetPWM(TPM_tenModules enModule, TPM_tenChannels enChannel, uint16 u16V
 	else
 	{
 		/*!Nothing to do*/
+	}
+}
+
+void TPM_vChangeFrecuency(TPM_tenModules enModule, TPM_tenChannels enChannel, uint8 u8Frecuency)
+{
+	uint16 u16NewMODValue = 0;
+	if(u8Frecuency < MAX_FREQ_ALLOWED)
+	{
+		u16NewMODValue = MOD_K_CONSTANT / u8Frecuency;
+		if(enModule == enTPM0)
+		{
+			TPM0_MOD = u16NewMODValue;
+			TPM0_CnV(enChannel) = u16NewMODValue / 2;
+		}
+		else if(enModule == enTPM1)
+		{
+			TPM1_MOD = u16NewMODValue;
+			TPM1_CnV(enChannel) = u16NewMODValue / 2;
+		}
+		else if(enModule == enTPM2)
+		{
+			TPM2_MOD = u16NewMODValue;
+			TPM2_CnV(enChannel) = u16NewMODValue / 2;
+		}
+		else
+		{
+			/*Nothing to do*/
+		}
+	}
+	else
+	{
+		/*Nothing to do*/
 	}
 }
