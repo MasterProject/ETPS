@@ -65,6 +65,7 @@ Sources \
 Project_Settings/Startup_Code \
 Modules/LowDrivers/TPM \
 Modules/LowDrivers/PIT \
+Modules/LowDrivers/IIC \
 Modules/LowDrivers/GPIO \
 Modules/LowDrivers/ADC \
 Modules/App/Test \

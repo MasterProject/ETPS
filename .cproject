@@ -44,6 +44,7 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/LowDrivers/GPIO&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/App/HeartBit&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/LowDrivers/PIT&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/LowDrivers/IIC&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/LowDrivers/ADC&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/LowDrivers/TPM&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${MCUToolsBaseDir}/ARM_GCC_Support/ewl/EWL_C/include&quot;"/>

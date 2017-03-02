@@ -3,6 +3,7 @@
 "./Modules/App/Test/Test.o"
 "./Modules/LowDrivers/ADC/ADC.o"
 "./Modules/LowDrivers/GPIO/GPIO.o"
+"./Modules/LowDrivers/IIC/IIC.o"
 "./Modules/LowDrivers/PIT/PIT.o"
 "./Modules/LowDrivers/TPM/TPM.o"
 "./Project_Settings/Startup_Code/kinetis_sysinit.o"
