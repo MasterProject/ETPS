@@ -2,7 +2,7 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-#Progress monitor hint: 15
+#Progress monitor hint: 18
 first : all
 -include ../makefile.init
 
@@ -18,6 +18,9 @@ RM := "$(GNU_Make_Install_DirEnv)/rm" -rf
 -include System/Scheduler/subdir.mk
 -include Sources/subdir.mk
 -include Project_Settings/Startup_Code/subdir.mk
+-include Modules/MidDrivers/LCD/subdir.mk
+-include Modules/MidDrivers/IRQ/subdir.mk
+-include Modules/MidDrivers/DBNCR/subdir.mk
 -include Modules/LowDrivers/TPM/subdir.mk
 -include Modules/LowDrivers/PIT/subdir.mk
 -include Modules/LowDrivers/IIC/subdir.mk
@@ -68,7 +71,7 @@ all: warning-messages explicit-dependencies ProyectoTerapiaPresion.elf secondary
 # Tool invocations
 ProyectoTerapiaPresion.elf: $(OBJS) $(USER_OBJS) ../Project_Settings/Linker_Files/MKL25Z128_flash.ld
 	@echo 'Building target: $@'
-	@echo 'Executing target #16 $@'
+	@echo 'Executing target #19 $@'
 	@echo 'Invoking: ARM Ltd Windows GCC C Linker'
 	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc"  $(USER_OBJS_QUOTED) $(LIBS_QUOTED) @"ProyectoTerapiaPresion.args" -o"ProyectoTerapiaPresion.elf"
 	@echo 'Finished building target: $@'

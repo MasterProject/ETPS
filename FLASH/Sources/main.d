@@ -21,7 +21,7 @@ Sources/main.o: ../Sources/main.c \
  C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/LowDrivers/PIT/PIT.h \
  C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/App/HeartBit/HeartBit.h \
  C:/Users/PMG/Documents/GitHub/ETSP/ETPS/System/Scheduler/Sch.h \
- C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/LowDrivers/IIC/IIC.h
+ C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/MidDrivers/DBNCR/Debouncer.h
 
 C:/Freescale/CW\ MCU\ v10.6/MCU/ARM_GCC_Support/ewl/EWL_C/include/lib_ewl.prefix:
 
@@ -67,4 +67,4 @@ C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/App/HeartBit/HeartBit.h:
 
 C:/Users/PMG/Documents/GitHub/ETSP/ETPS/System/Scheduler/Sch.h:
 
-C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/LowDrivers/IIC/IIC.h:
+C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/MidDrivers/DBNCR/Debouncer.h:

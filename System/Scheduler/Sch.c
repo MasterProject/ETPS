@@ -46,7 +46,7 @@ void PIT_IRQHandler(void)
 		
 		while(u16TaskIndex != SCH_nTASKS)
 		{
-			if( _astTasks[u16TaskIndex].u16CurrentTaskTime == _astTasks[u16TaskIndex].u16TargetTaskTime )
+			if( _astTasks[u16TaskIndex].u16CurrentTaskTime == (_astTasks[u16TaskIndex].u16TargetTaskTime - 1) )
 			{
 				_astTasks[u16TaskIndex].u8FlagToExectue = 1;
 				_astTasks[u16TaskIndex].u16CurrentTaskTime = 0;

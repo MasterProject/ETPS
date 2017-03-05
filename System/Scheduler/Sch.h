@@ -13,6 +13,7 @@
 #include "Typedef.h"
 #include "MKL25Z4.h"
 #include "HeartBit.h"
+#include "Debouncer.h"
 
 #define SCH_nTASKS 3
 
@@ -35,9 +36,9 @@
 		0						\
 	},							\
 	{							\
-		HB_vTaskRedLed,			\
+		DBNCR_vMonitor,			\
 		0,						\
-		200,					\
+		4,					\
 		0						\
 	},							\
 	{							\

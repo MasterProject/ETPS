@@ -30,7 +30,7 @@ OBJS_OS_FORMAT += \
 # Each subdirectory must supply rules for building sources it contributes
 Modules/App/HeartBit/HeartBit.o: ../Modules/App/HeartBit/HeartBit.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #14 $<'
+	@echo 'Executing target #17 $<'
 	@echo 'Invoking: ARM Ltd Windows GCC C Compiler'
 	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"Modules/App/HeartBit/HeartBit.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"Modules/App/HeartBit/HeartBit.o"
 	@echo 'Finished building: $<'

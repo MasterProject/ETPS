@@ -63,6 +63,9 @@ System/SysInit \
 System/Scheduler \
 Sources \
 Project_Settings/Startup_Code \
+Modules/MidDrivers/LCD \
+Modules/MidDrivers/IRQ \
+Modules/MidDrivers/DBNCR \
 Modules/LowDrivers/TPM \
 Modules/LowDrivers/PIT \
 Modules/LowDrivers/IIC \

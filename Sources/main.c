@@ -5,28 +5,18 @@
 
 #include "SysInit.h"
 #include "Sch.h"
-#include "IIC.h"
+#include "Debouncer.h"
 
 int main(void)
 {
-	uint8 u8Data = 0;
-	static uint8 u8RW = 0;
-	static uint8 u8Reg = 0;
-	static uint8 u8DataTx;
+	uint8 u8FreqButton;
+	uint8 u8PWMButton;
+	
 	SI_vInitSystem();
-	IIC_vInit();
 	
 	for(;;) 
 	{	  
-		if(u8RW == 0)
-		{
-			u8Data = IIC_u8Read(0xAF, u8Reg);	
-		}
-		else
-		{
-			IIC_vWrite(0xAE, u8Reg, u8DataTx);
-		}
-		asm("nop");
+		SCH_vMonitor();
 	}
 	return 0;
 }

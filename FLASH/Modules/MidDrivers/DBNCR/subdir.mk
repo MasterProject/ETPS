@@ -6,33 +6,33 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS_QUOTED += \
-"../Modules/LowDrivers/IIC/IIC.c" \
+"../Modules/MidDrivers/DBNCR/Debouncer.c" \
 
 C_SRCS += \
-../Modules/LowDrivers/IIC/IIC.c \
+../Modules/MidDrivers/DBNCR/Debouncer.c \
 
 OBJS += \
-./Modules/LowDrivers/IIC/IIC.o \
+./Modules/MidDrivers/DBNCR/Debouncer.o \
 
 C_DEPS += \
-./Modules/LowDrivers/IIC/IIC.d \
+./Modules/MidDrivers/DBNCR/Debouncer.d \
 
 OBJS_QUOTED += \
-"./Modules/LowDrivers/IIC/IIC.o" \
+"./Modules/MidDrivers/DBNCR/Debouncer.o" \
 
 C_DEPS_QUOTED += \
-"./Modules/LowDrivers/IIC/IIC.d" \
+"./Modules/MidDrivers/DBNCR/Debouncer.d" \
 
 OBJS_OS_FORMAT += \
-./Modules/LowDrivers/IIC/IIC.o \
+./Modules/MidDrivers/DBNCR/Debouncer.o \
 
 
 # Each subdirectory must supply rules for building sources it contributes
-Modules/LowDrivers/IIC/IIC.o: ../Modules/LowDrivers/IIC/IIC.c
+Modules/MidDrivers/DBNCR/Debouncer.o: ../Modules/MidDrivers/DBNCR/Debouncer.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #13 $<'
+	@echo 'Executing target #10 $<'
 	@echo 'Invoking: ARM Ltd Windows GCC C Compiler'
-	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"Modules/LowDrivers/IIC/IIC.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"Modules/LowDrivers/IIC/IIC.o"
+	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"Modules/MidDrivers/DBNCR/Debouncer.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"Modules/MidDrivers/DBNCR/Debouncer.o"
 	@echo 'Finished building: $<'
 	@echo ' '
 

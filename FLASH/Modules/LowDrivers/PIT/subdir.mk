@@ -30,7 +30,7 @@ OBJS_OS_FORMAT += \
 # Each subdirectory must supply rules for building sources it contributes
 Modules/LowDrivers/PIT/PIT.o: ../Modules/LowDrivers/PIT/PIT.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #9 $<'
+	@echo 'Executing target #12 $<'
 	@echo 'Invoking: ARM Ltd Windows GCC C Compiler'
 	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"Modules/LowDrivers/PIT/PIT.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"Modules/LowDrivers/PIT/PIT.o"
 	@echo 'Finished building: $<'

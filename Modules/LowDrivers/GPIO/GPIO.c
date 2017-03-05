@@ -45,19 +45,19 @@ void GPIO_vPinsInit(void)
 	PORTB_PCR3  = PORT_PCR_MUX(2);			/*!Mux = I2C0_SDA*/
 	
 	/*!Push Button Return*/
-	PORTE_PCR1  = PORT_PCR_MUX(1);			/*!Mux = GPIO*/
-	GPIOE_PDDR &= ~( 1 << 1 );
+	PORTB_PCR11  = PORT_PCR_MUX(1) | PORT_PCR_PE_MASK | PORT_PCR_PS_MASK;;			/*!Mux = GPIO*/
+	GPIOB_PDDR &= ~( 1 << 11 );
 	
 	/*!Push Button Ok*/
-	PORTE_PCR0  = PORT_PCR_MUX(1);			/*!Mux = GPIO*/
-	GPIOE_PDDR &= ~( 1 << 1 );
+	PORTB_PCR10  = PORT_PCR_MUX(1) | PORT_PCR_PE_MASK | PORT_PCR_PS_MASK;;			/*!Mux = GPIO*/
+	GPIOB_PDDR &= ~( 1 << 10 );
 	
 	/*!Push Button UP*/
-	PORTB_PCR8  = PORT_PCR_MUX(1);			/*!Mux = GPIO*/
+	PORTB_PCR8  = PORT_PCR_MUX(1) | PORT_PCR_PE_MASK | PORT_PCR_PS_MASK;			/*!Mux = GPIO*/
 	GPIOB_PDDR &= ~( 1 << 8 );
 	
 	/*!Push Button Down*/
-	PORTB_PCR9  = PORT_PCR_MUX(1);			/*!Mux = GPIO*/
+	PORTB_PCR9  = PORT_PCR_MUX(1) | PORT_PCR_PE_MASK | PORT_PCR_PS_MASK;			/*!Mux = GPIO*/
 	GPIOB_PDDR &= ~( 1 << 9 );
 	
 	/*!Push Button Emergency*/
