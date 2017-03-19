@@ -18,6 +18,12 @@
 //
 //static LCD_stStateMachine _stLCDDriver;
 //
+//static const uint8 au8LCDConfig[] = 
+//{
+//		LCD_INIT_CMD0,
+//		LCD_INIT_CMD1,
+//		LCD_INIT_CMD2
+//};
 //uint8 au8LCDBuffer[LCD_SIZE_Y][LCD_SIZE_X+1];
 //
 //void _vIdle ( void );
