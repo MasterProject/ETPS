@@ -14,7 +14,7 @@
 #include "derivative.h"
 
 #define LCD_SIZE_Y				2
-#define LCD_SIZE_X				16
+#define LCD_SIZE_X				19
 
 #define LCD_nENABLE_ON			(GPIOC_PDOR |=  (1 << 0))
 #define LCD_nENABLE_OFF			(GPIOC_PDOR &= ~(1 << 0))
@@ -46,13 +46,19 @@
 #define LCD_nSET_D7				(GPIOC_PDOR |=  (1 << 9))
 #define LCD_nCLEAR_D7			(GPIOC_PDOR &= ~(1 << 9))
 
+#define LCD_INIT_CMD0			0x38
+#define LCD_INIT_CMD1			0x0F
+#define LCD_INIT_CMD2			0x01
+
+#define LCD_JUMPLINE_CMD		0xC0
 typedef enum
 {
 	LCD_enIdle = 0,
-	LCD_enSelectTypeOfData,
+	LCD_enWriteCMD,
 	LCD_enWriteData,
 	LCD_enEnable,
-	LCD_enDisable
+	LCD_enDisable,
+	LCD_enDelayCMD
 }LCD_tenStates;
 
 typedef enum
@@ -63,5 +69,10 @@ typedef enum
 
 extern void LCD_vInit ( void );
 extern void LCD_vDriver ( void );
+extern void LCD_vUpdateScreen ( uint8* pu8NewScreen );
+extern uint8 LCD_u8IsBusy ( void );
+extern void LCD_vClearScreen ( void );
+extern void LCD_vSetFreqFlag ( void );
+extern void LCD_vClearFreqFlag ( void );
 
 #endif /* LCD_H_ */

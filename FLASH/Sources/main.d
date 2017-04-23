@@ -20,8 +20,13 @@ Sources/main.o: ../Sources/main.c \
  C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/App/Test/Test.h \
  C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/LowDrivers/PIT/PIT.h \
  C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/App/HeartBit/HeartBit.h \
+ C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/MidDrivers/LCD/LCD.h \
+ C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/MidDrivers/IRQ/IRQ.h \
  C:/Users/PMG/Documents/GitHub/ETSP/ETPS/System/Scheduler/Sch.h \
- C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/MidDrivers/DBNCR/Debouncer.h
+ C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/MidDrivers/DBNCR/Debouncer.h \
+ C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/HMI/HMI.h \
+ C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/MidDrivers/BUZZER/BZR.h \
+ C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/App/ElectroTherapy/ET.h
 
 C:/Freescale/CW\ MCU\ v10.6/MCU/ARM_GCC_Support/ewl/EWL_C/include/lib_ewl.prefix:
 
@@ -65,6 +70,16 @@ C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/LowDrivers/PIT/PIT.h:
 
 C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/App/HeartBit/HeartBit.h:
 
+C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/MidDrivers/LCD/LCD.h:
+
+C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/MidDrivers/IRQ/IRQ.h:
+
 C:/Users/PMG/Documents/GitHub/ETSP/ETPS/System/Scheduler/Sch.h:
 
 C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/MidDrivers/DBNCR/Debouncer.h:
+
+C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/HMI/HMI.h:
+
+C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/MidDrivers/BUZZER/BZR.h:
+
+C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/App/ElectroTherapy/ET.h:

@@ -18,7 +18,7 @@ void GPIO_vPinsInit(void)
 	PORTE_PCR20 = PORT_PCR_MUX(3);			/*!Mux = TPM1_CH0*/
 	
 	/*!Freq to Buzzer*/
-	PORTE_PCR21 = PORT_PCR_MUX(3);			/*!Mux = TPM1_CH1*/
+	PORTE_PCR23 = PORT_PCR_MUX(3);			/*!Mux = TPM1_CH1*/
 	
 	/*!Blue Extern Led Heart Bit*/
 	PORTD_PCR1  = PORT_PCR_MUX(1);			/*!Mux = GPIO*/
@@ -60,9 +60,9 @@ void GPIO_vPinsInit(void)
 	PORTB_PCR9  = PORT_PCR_MUX(1) | PORT_PCR_PE_MASK | PORT_PCR_PS_MASK;			/*!Mux = GPIO*/
 	GPIOB_PDDR &= ~( 1 << 9 );
 	
-	/*!Push Button Emergency*/
-	PORTB_PCR10 = PORT_PCR_MUX(1);			/*!Mux = GPIO*/
-	GPIOB_PDDR &= ~( 1 << 10 );
+	/*!Push Button Emergency Init in IRQ*/
+	/*PORTA_PCR4 = PORT_PCR_MUX(1)|PORT_PCR_IRQC(0x8)|PORT_PCR_PE_MASK;	*/		/*!Mux = GPIO*/
+	/*GPIOA_PDDR &= ~( 1 << 4 );*/
 	
 	/*!Switch to Stop Power Circuit*/
 	PORTE_PCR2  = PORT_PCR_MUX(1);			/*!Mux = GPIO*/
@@ -89,8 +89,8 @@ void GPIO_vPinsInit(void)
 	GPIOA_PDDR |= ( 1 << 12 );
 	
 	/*!LCD D4*/
-	PORTA_PCR4  = PORT_PCR_MUX(1);			/*!Mux = GPIO*/
-	GPIOA_PDDR |= ( 1 << 4 );
+	PORTC_PCR3  = PORT_PCR_MUX(1);			/*!Mux = GPIO*/
+	GPIOC_PDDR |= ( 1 << 3 );
 	
 	/*!LCD D5*/
 	PORTA_PCR5  = PORT_PCR_MUX(1);			/*!Mux = GPIO*/

@@ -17,6 +17,8 @@
 #include "Test.h"
 #include "PIT.h"
 #include "HeartBit.h"
+#include "LCD.h"
+#include "IRQ.h"
 
 extern void SI_vInitSystem ( void );
 

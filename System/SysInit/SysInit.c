@@ -16,4 +16,6 @@ void SI_vInitSystem ( void )
 	ADC_vInit();
 	PIT_vInit();
 	HB_vInit();
+	LCD_vInit();
+	IRQ_vInit();
 }

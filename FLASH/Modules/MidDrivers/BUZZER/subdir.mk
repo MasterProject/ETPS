@@ -6,33 +6,33 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS_QUOTED += \
-"../Modules/App/Test/Test.c" \
+"../Modules/MidDrivers/BUZZER/BZR.c" \
 
 C_SRCS += \
-../Modules/App/Test/Test.c \
+../Modules/MidDrivers/BUZZER/BZR.c \
 
 OBJS += \
-./Modules/App/Test/Test.o \
+./Modules/MidDrivers/BUZZER/BZR.o \
 
 C_DEPS += \
-./Modules/App/Test/Test.d \
+./Modules/MidDrivers/BUZZER/BZR.d \
 
 OBJS_QUOTED += \
-"./Modules/App/Test/Test.o" \
+"./Modules/MidDrivers/BUZZER/BZR.o" \
 
 C_DEPS_QUOTED += \
-"./Modules/App/Test/Test.d" \
+"./Modules/MidDrivers/BUZZER/BZR.d" \
 
 OBJS_OS_FORMAT += \
-./Modules/App/Test/Test.o \
+./Modules/MidDrivers/BUZZER/BZR.o \
 
 
 # Each subdirectory must supply rules for building sources it contributes
-Modules/App/Test/Test.o: ../Modules/App/Test/Test.c
+Modules/MidDrivers/BUZZER/BZR.o: ../Modules/MidDrivers/BUZZER/BZR.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #18 $<'
+	@echo 'Executing target #11 $<'
 	@echo 'Invoking: ARM Ltd Windows GCC C Compiler'
-	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"Modules/App/Test/Test.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"Modules/App/Test/Test.o"
+	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"Modules/MidDrivers/BUZZER/BZR.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"Modules/MidDrivers/BUZZER/BZR.o"
 	@echo 'Finished building: $<'
 	@echo ' '
 

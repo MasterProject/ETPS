@@ -66,11 +66,13 @@ Project_Settings/Startup_Code \
 Modules/MidDrivers/LCD \
 Modules/MidDrivers/IRQ \
 Modules/MidDrivers/DBNCR \
+Modules/MidDrivers/BUZZER \
 Modules/LowDrivers/TPM \
 Modules/LowDrivers/PIT \
 Modules/LowDrivers/IIC \
 Modules/LowDrivers/GPIO \
 Modules/LowDrivers/ADC \
+Modules/HMI \
 Modules/App/Test \
 Modules/App/HeartBit \
 Modules/App/ElectroTherapy \

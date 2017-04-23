@@ -37,6 +37,7 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Project_Settings/Startup_Code&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/App/ElectroTherapy&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/App/Test&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/HMI&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/Tools&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Project_Headers&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/System/SysInit&quot;"/>
@@ -47,6 +48,9 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/LowDrivers/IIC&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/LowDrivers/ADC&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/MidDrivers/DBNCR&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/MidDrivers/IRQ&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/MidDrivers/LCD&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/MidDrivers/BUZZER&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/LowDrivers/TPM&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${MCUToolsBaseDir}/ARM_GCC_Support/ewl/EWL_C/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${MCUToolsBaseDir}/ARM_GCC_Support/ewl/EWL_Runtime/include&quot;"/>

@@ -30,7 +30,7 @@ OBJS_OS_FORMAT += \
 # Each subdirectory must supply rules for building sources it contributes
 Modules/App/ElectroTherapy/ET.o: ../Modules/App/ElectroTherapy/ET.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #18 $<'
+	@echo 'Executing target #20 $<'
 	@echo 'Invoking: ARM Ltd Windows GCC C Compiler'
 	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"Modules/App/ElectroTherapy/ET.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"Modules/App/ElectroTherapy/ET.o"
 	@echo 'Finished building: $<'

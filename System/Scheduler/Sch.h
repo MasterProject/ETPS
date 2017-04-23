@@ -14,11 +14,15 @@
 #include "MKL25Z4.h"
 #include "HeartBit.h"
 #include "Debouncer.h"
+#include "LCD.h"
+#include "HMI.h"
+#include "BZR.h"
+#include "ET.h"
 
-#define SCH_nTASKS 3
+#define SCH_nTASKS 6
 
 
-/*!Base Time 5 miliseconds*/
+/*!Base Time 1 miliseconds*/
 /*!Here define your task as:
  *
  *Task_Function
@@ -30,24 +34,43 @@
 #define SHC_nTASK_DEFINITION 	\
 {								\
 	{							\
-		HB_vTask,				\
-		0,						\
-		100,					\
-		0						\
-	},							\
-	{							\
 		DBNCR_vMonitor,			\
 		0,						\
-		4,					\
+		15,						\
 		0						\
 	},							\
 	{							\
-		HB_vTaskAnotherLed,		\
+		LCD_vDriver,			\
+		0,						\
+		1,						\
+		1						\
+	},							\
+	{							\
+		HMI_vMain,				\
+		0,						\
+		10,						\
+		0						\
+	},							\
+	{							\
+		BZR_vMain,				\
+		0,						\
+		500,					\
+		0						\
+	},							\
+	{							\
+		HB_vTask,				\
+		0,						\
+		500,					\
+		0						\
+	},							\
+	{							\
+		ET_vMain,				\
 		0,						\
 		50,						\
 		0						\
 	}							\
 }								
+
 
 extern void SCH_vMonitor ( void );
 

@@ -10,6 +10,6 @@
 #ifndef ET_H_
 #define ET_H_
 
-void ET_Dumy ( void );
+void ET_vMain ( void );
 
 #endif /* ET_H_ */

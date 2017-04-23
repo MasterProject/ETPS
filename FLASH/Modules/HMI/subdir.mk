@@ -2,37 +2,37 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
--include ../../../makefile.local
+-include ../../makefile.local
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS_QUOTED += \
-"../Modules/App/Test/Test.c" \
+"../Modules/HMI/HMI.c" \
 
 C_SRCS += \
-../Modules/App/Test/Test.c \
+../Modules/HMI/HMI.c \
 
 OBJS += \
-./Modules/App/Test/Test.o \
+./Modules/HMI/HMI.o \
 
 C_DEPS += \
-./Modules/App/Test/Test.d \
+./Modules/HMI/HMI.d \
 
 OBJS_QUOTED += \
-"./Modules/App/Test/Test.o" \
+"./Modules/HMI/HMI.o" \
 
 C_DEPS_QUOTED += \
-"./Modules/App/Test/Test.d" \
+"./Modules/HMI/HMI.d" \
 
 OBJS_OS_FORMAT += \
-./Modules/App/Test/Test.o \
+./Modules/HMI/HMI.o \
 
 
 # Each subdirectory must supply rules for building sources it contributes
-Modules/App/Test/Test.o: ../Modules/App/Test/Test.c
+Modules/HMI/HMI.o: ../Modules/HMI/HMI.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #18 $<'
+	@echo 'Executing target #17 $<'
 	@echo 'Invoking: ARM Ltd Windows GCC C Compiler'
-	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"Modules/App/Test/Test.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"Modules/App/Test/Test.o"
+	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"Modules/HMI/HMI.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"Modules/HMI/HMI.o"
 	@echo 'Finished building: $<'
 	@echo ' '
 

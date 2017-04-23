@@ -6,12 +6,10 @@
 #include "SysInit.h"
 #include "Sch.h"
 #include "Debouncer.h"
+#include "BZR.h"
 
 int main(void)
 {
-	uint8 u8FreqButton;
-	uint8 u8PWMButton;
-	
 	SI_vInitSystem();
 	
 	for(;;) 
