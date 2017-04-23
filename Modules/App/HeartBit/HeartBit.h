@@ -13,15 +13,16 @@
 #include "MKL25Z4.h"
 #include "Typedef.h"
 
-#define HB_TURN_OFF_HEART_BIT		GPIOD_PDOR &= ~(1 << 1)
-#define HB_TOGGLE_HEART_BIT			GPIOD_PTOR |= (1 << 1)
-
-#define HB_TOGGLE_RED_LED			GPIOA_PTOR |=  (1 << 1)
-#define HB_TOGGLE_ANOTHER_LED		GPIOA_PTOR |=  (1 << 2)
+#define HB_TURN_OFF_HEART_BIT		GPIOD_PDOR &= ~(1 << 1 )
+#define HB_TOGGLE_HEART_BIT			GPIOD_PTOR |=  (1 << 1 )
+#define HB_TOGGLE_YELLOW_LED 		GPIOC_PTOR |=  (1 << 11)
+#define HB_TURN_OFF_YELLOW_LED		GPIOC_PDOR &= ~(1 << 11 )
+#define HB_TOGGLE_RED_LED			GPIOA_PTOR |=  (1 << 1 )
+#define HB_TOGGLE_ANOTHER_LED		GPIOA_PTOR |=  (1 << 2 )
 
 extern void HB_vInit ( void );
 extern void HB_vTask( void );
-extern void HB_vTaskRedLed ( void );
-extern void HB_vTaskAnotherLed ( void );
+extern void HB_vActiveYellowLed ( void );
+extern void HB_vDeactiveYellowLed ( void );
 
 #endif /* HEARTBIT_H_ */

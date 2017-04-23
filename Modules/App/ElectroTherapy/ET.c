@@ -43,6 +43,5 @@ void ET_vMain ( void )
 	else
 	{
 		/*Nothing to do*/
-		
 	}
 }

@@ -9,6 +9,8 @@
 
 #include "HeartBit.h"
 
+static uint8 u8WarningYellowLed = 0;
+
 void HB_vInit ( void )
 {
 	HB_TURN_OFF_HEART_BIT;
@@ -17,14 +19,23 @@ void HB_vInit ( void )
 void HB_vTask( void )
 {
 	HB_TOGGLE_HEART_BIT;
+	if(u8WarningYellowLed)
+	{
+		HB_TOGGLE_YELLOW_LED;
+	}
+	else
+	{
+		/*Nothing to do*/
+	}
 }
 
-void HB_vTaskRedLed ( void )
+void HB_vActiveYellowLed ( void )
 {
-	HB_TOGGLE_RED_LED;
+	u8WarningYellowLed = 1;
 }
 
-void HB_vTaskAnotherLed ( void )
+void HB_vDeactiveYellowLed ( void )
 {
-	HB_TOGGLE_ANOTHER_LED;
+	u8WarningYellowLed = 0;
+	HB_TURN_OFF_YELLOW_LED;
 }
