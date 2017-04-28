@@ -15,6 +15,7 @@ static uint8 u8Status = 0;
 
 void BZR_vMain ( void )
 {	
+
 	if(u8Activate == 1)
 	{
 		if(u8Status == 0)

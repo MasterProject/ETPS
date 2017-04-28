@@ -43,9 +43,12 @@
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/System/SysInit&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/System/Scheduler&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/LowDrivers/GPIO&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/LowDrivers/MCG&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/App/HeartBit&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/LowDrivers/PIT&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/LowDrivers/NVIC&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/LowDrivers/IIC&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/LowDrivers/UART&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/LowDrivers/ADC&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/MidDrivers/DBNCR&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/MidDrivers/IRQ&quot;"/>

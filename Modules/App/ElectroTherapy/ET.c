@@ -23,8 +23,8 @@ void ET_vMain ( void )
 	if(u8CurrentFreq != u8PrevFreq)
 	{
 		u8PrevFreq =  u8CurrentFreq;
-		u8CurrentFreq = u8CurrentFreq * 80 / 100;
-		u8CurrentFreq+= 20;
+		/*u8CurrentFreq = u8CurrentFreq * 80 / 100;
+		u8CurrentFreq+= 20;*/
 		/*Set Freq to Interface*/
 		TPM_vChangeFrecuency(enTPM1, enChannel0, u8CurrentFreq);
 		TPM_vChangeDutyCycle(enTPM1, enChannel0, u8CurrentInts);

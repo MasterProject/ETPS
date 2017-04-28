@@ -5,16 +5,18 @@
 
 #include "SysInit.h"
 #include "Sch.h"
-#include "Debouncer.h"
-#include "BZR.h"
 
 int main(void)
 {
 	SI_vInitSystem();
-	
 	for(;;) 
 	{	  
 		SCH_vMonitor();
+		/*
+		if(UART_CHECK_STATUS(UART_RX_DONE))
+		{
+			UART_bfnRxBuffer();
+		}*/
 	}
 	return 0;
 }

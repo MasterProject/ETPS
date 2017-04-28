@@ -22,6 +22,9 @@ Sources/main.o: ../Sources/main.c \
  C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/App/HeartBit/HeartBit.h \
  C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/MidDrivers/LCD/LCD.h \
  C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/MidDrivers/IRQ/IRQ.h \
+ C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/LowDrivers/MCG/MGCDvr.h \
+ C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/LowDrivers/UART/UART.h \
+ C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/LowDrivers/NVIC/NVIC.h \
  C:/Users/PMG/Documents/GitHub/ETSP/ETPS/System/Scheduler/Sch.h \
  C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/MidDrivers/DBNCR/Debouncer.h \
  C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/HMI/HMI.h \
@@ -73,6 +76,12 @@ C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/App/HeartBit/HeartBit.h:
 C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/MidDrivers/LCD/LCD.h:
 
 C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/MidDrivers/IRQ/IRQ.h:
+
+C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/LowDrivers/MCG/MGCDvr.h:
+
+C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/LowDrivers/UART/UART.h:
+
+C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/LowDrivers/NVIC/NVIC.h:
 
 C:/Users/PMG/Documents/GitHub/ETSP/ETPS/System/Scheduler/Sch.h:
 

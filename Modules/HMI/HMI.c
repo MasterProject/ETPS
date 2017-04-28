@@ -228,7 +228,7 @@ void _vFreqValueScreen ( void )
 	if(LCD_u8IsBusy() && u8ScreenUpdated == 0)
 	{
 		sprintf ( &au8TransferBuffer[0][0], "Adjust Frequency");
-		sprintf ( &au8TransferBuffer[1][0], "      %d %        ", u8FreqValue);
+		sprintf ( &au8TransferBuffer[1][0], "      %d Hz       ", u8FreqValue);
 		LCD_vUpdateScreen(&au8TransferBuffer[0][0]);
 		u8ScreenUpdated = 1;
 	}
@@ -677,7 +677,6 @@ void (* HMI_vpaStates[])(void) =
 
 void HMI_vMain ( void )
 {
-	
 	if(HMI_vGetEmergencyStop() && u8EmergencyActive == 0)
 	{
 		_stHMISM.enCurrentState = HMI_enClearScreen;

@@ -12,10 +12,12 @@
 void SI_vInitSystem ( void )
 {
 	GPIO_vPinsInit();
+	vfnMGCInit();
 	TPM_vInit();
 	ADC_vInit();
 	PIT_vInit();
 	HB_vInit();
 	LCD_vInit();
 	IRQ_vInit();
+	UART_vfnInit( 0, 8, 26);
 }

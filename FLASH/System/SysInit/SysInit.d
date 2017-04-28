@@ -21,7 +21,10 @@ System/SysInit/SysInit.o: ../System/SysInit/SysInit.c \
  C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/LowDrivers/PIT/PIT.h \
  C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/App/HeartBit/HeartBit.h \
  C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/MidDrivers/LCD/LCD.h \
- C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/MidDrivers/IRQ/IRQ.h
+ C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/MidDrivers/IRQ/IRQ.h \
+ C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/LowDrivers/MCG/MGCDvr.h \
+ C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/LowDrivers/UART/UART.h \
+ C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/LowDrivers/NVIC/NVIC.h
 
 C:/Freescale/CW\ MCU\ v10.6/MCU/ARM_GCC_Support/ewl/EWL_C/include/lib_ewl.prefix:
 
@@ -68,3 +71,9 @@ C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/App/HeartBit/HeartBit.h:
 C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/MidDrivers/LCD/LCD.h:
 
 C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/MidDrivers/IRQ/IRQ.h:
+
+C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/LowDrivers/MCG/MGCDvr.h:
+
+C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/LowDrivers/UART/UART.h:
+
+C:/Users/PMG/Documents/GitHub/ETSP/ETPS/Modules/LowDrivers/NVIC/NVIC.h:

@@ -30,7 +30,7 @@ OBJS_OS_FORMAT += \
 # Each subdirectory must supply rules for building sources it contributes
 Modules/HMI/HMI.o: ../Modules/HMI/HMI.c
 	@echo 'Building file: $<'
-	@echo 'Executing target #17 $<'
+	@echo 'Executing target #20 $<'
 	@echo 'Invoking: ARM Ltd Windows GCC C Compiler'
 	"$(ARMSourceryDirEnv)/arm-none-eabi-gcc" "$<" @"Modules/HMI/HMI.args" -MMD -MP -MF"$(@:%.o=%.d)" -o"Modules/HMI/HMI.o"
 	@echo 'Finished building: $<'

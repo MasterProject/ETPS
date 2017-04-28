@@ -25,8 +25,8 @@ void TPM_vInit(void)
 	TPM2_CnSC(1) |= (TPM_CnSC_MSB_MASK | TPM_CnSC_ELSB_MASK);
 	
 	/*Turn on Clocks*/
-	TPM1_SC |= TPM_SC_PS(6)|TPM_SC_TOF_MASK |TPM_SC_TOIE_MASK |TPM_SC_CMOD(1);		/*ClockSource/2, TOF and TOIE enable*/
-	TPM2_SC |= TPM_SC_PS(6)|TPM_SC_TOF_MASK |TPM_SC_TOIE_MASK |TPM_SC_CMOD(1);			/*ClockSource/2, TOF and TOIE enable*/
+	TPM1_SC |= TPM_SC_PS(7)|TPM_SC_TOF_MASK |TPM_SC_TOIE_MASK |TPM_SC_CMOD(1);		/*ClockSource/2, TOF and TOIE enable*/
+	TPM2_SC |= TPM_SC_PS(7)|TPM_SC_TOF_MASK |TPM_SC_TOIE_MASK |TPM_SC_CMOD(1);			/*ClockSource/2, TOF and TOIE enable*/
 }
 
 void TPM_vSetPWM(TPM_tenModules enModule, TPM_tenChannels enChannel, uint16 u16Value)

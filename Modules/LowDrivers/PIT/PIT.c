@@ -13,8 +13,8 @@ void PIT_vInit( void )
 	PIT_MCR &= ~PIT_MCR_MDIS_MASK;
 	PIT_MCR |= PIT_MCR_FRZ_MASK;
 	/* Load the target count to the Counter0 */
-	/*PIT_LDVAL0 = 52500; /*5ms*/
-	PIT_LDVAL0 = 10500; /*1 ms*/
+	//PIT_LDVAL0 = 52500; /*5ms*/
+	PIT_LDVAL0 = 24000; /*1 ms*/
 	/* Start the counter and enable interrupts */
 	PIT_TCTRL0 |= PIT_TCTRL_TEN_MASK|PIT_TCTRL_TIE_MASK;
 }

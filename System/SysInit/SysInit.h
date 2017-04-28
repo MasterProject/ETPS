@@ -19,7 +19,8 @@
 #include "HeartBit.h"
 #include "LCD.h"
 #include "IRQ.h"
-
+#include "MGCDvr.h"
+#include "UART.h"
 extern void SI_vInitSystem ( void );
 
 #endif /* SYSINIT_H_ */

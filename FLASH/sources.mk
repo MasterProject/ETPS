@@ -67,8 +67,11 @@ Modules/MidDrivers/LCD \
 Modules/MidDrivers/IRQ \
 Modules/MidDrivers/DBNCR \
 Modules/MidDrivers/BUZZER \
+Modules/LowDrivers/UART \
 Modules/LowDrivers/TPM \
 Modules/LowDrivers/PIT \
+Modules/LowDrivers/NVIC \
+Modules/LowDrivers/MCG \
 Modules/LowDrivers/IIC \
 Modules/LowDrivers/GPIO \
 Modules/LowDrivers/ADC \

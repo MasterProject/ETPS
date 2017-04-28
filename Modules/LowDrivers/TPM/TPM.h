@@ -13,10 +13,10 @@
 #include "MKL25Z4.h"
 #include "Typedef.h"
 
-#define MOD_VALUE_TPM1			32000
-#define MOD_VALUE_TPM2			328
+#define MOD_VALUE_TPM1			37500
+#define MOD_VALUE_TPM2			188
 
-#define MOD_K_CONSTANT			328125
+#define MOD_K_CONSTANT			187500
 #define MAX_FREQ_ALLOWED		101
 
 typedef enum
