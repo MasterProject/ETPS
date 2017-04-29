@@ -47,5 +47,6 @@ void HMI_vSetEmergencyStop ( void );
 uint8 HMI_vGetEmergencyStop ( void );
 uint8 HMI_u8GetFreqValue ( void );
 uint8 HMI_u8GetIntsValue ( void );
+void HMI_vSetPressure ( uint8 u8Press_value );
 
 #endif /* HMI_H_ */

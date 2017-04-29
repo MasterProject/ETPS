@@ -77,6 +77,7 @@ Modules/LowDrivers/GPIO \
 Modules/LowDrivers/ADC \
 Modules/HMI \
 Modules/App/Test \
+Modules/App/MTPRESS \
 Modules/App/HeartBit \
 Modules/App/ElectroTherapy \
 

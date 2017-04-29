@@ -22,6 +22,8 @@ static uint8 u8CorrectPassword = 0;
 
 
 static uint8 u8EmergencyActive = 0;
+static uint8 u8Pressure = 0;
+
 
 void _vWelcomeScreen ( void )
 {
@@ -340,7 +342,7 @@ void _vPressureValueScreen ( void )
 	if(LCD_u8IsBusy() && u8ScreenUpdated == 0)
 	{
 		sprintf ( &au8TransferBuffer[0][0], "    Pressure    ");
-		sprintf ( &au8TransferBuffer[1][0], "     Value      ");
+		sprintf ( &au8TransferBuffer[1][0], "      %d mmHg     ", u8Pressure);
 		LCD_vUpdateScreen(&au8TransferBuffer[0][0]);
 		u8ScreenUpdated = 1;
 	}
@@ -712,4 +714,10 @@ uint8 HMI_u8GetFreqValue ( void )
 uint8 HMI_u8GetIntsValue( void )
 {
 	return u8IntsValue;
+}
+
+void HMI_vSetPressure ( uint8 u8Press_value )
+{
+	u8Pressure = u8Press_value;
+	u8ScreenUpdated = 0;
 }

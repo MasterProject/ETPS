@@ -18,8 +18,9 @@
 #include "HMI.h"
 #include "BZR.h"
 #include "ET.h"
+#include "MTPRESS.h"
 
-#define SCH_nTASKS 6
+#define SCH_nTASKS 7
 
 
 /*!Base Time 1 miliseconds*/
@@ -68,8 +69,14 @@
 		0,						\
 		50,						\
 		0						\
-	}							\
-}								
+	},							\
+	{							\
+		MTPRESS_vMain,			\
+		0,						\
+		100,					\
+		0						\
+	}							\	
+}								\
 
 
 extern void SCH_vMonitor ( void );

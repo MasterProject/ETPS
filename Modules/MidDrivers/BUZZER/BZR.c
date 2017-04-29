@@ -27,7 +27,7 @@ void BZR_vMain ( void )
 		else
 		{
 			/*Turn ON Buzzer*/
-			TPM_vSetPWM(enTPM2, enChannel1, 320);
+			TPM_vSetPWM(enTPM2, enChannel1, 188);
 			u8Status = 0;
 		}
 	}

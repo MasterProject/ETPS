@@ -35,6 +35,7 @@
 								<option id="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.misc.enable.lstfilename.292448699" name="Enable Assembler Listing" superClass="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.misc.enable.lstfilename" value="false" valueType="boolean"/>
 								<option id="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.include.paths.1922084348" name="Include paths (-I)" superClass="org.eclipse.cdt.cross.arm.gnu.c.compiler.option.include.paths" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Project_Settings/Startup_Code&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/App/MTPRESS&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/App/ElectroTherapy&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/App/Test&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/Modules/HMI&quot;"/>
